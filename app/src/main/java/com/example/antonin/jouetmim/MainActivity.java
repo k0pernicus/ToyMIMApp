@@ -20,7 +20,11 @@ public class MainActivity extends AppCompatActivity {
                 MIMClass mim_object = new MIMClass();
                 long beg = System.currentTimeMillis();
                 for (int i = 0; i < 5000000; i++) {
-                    int b = mim_object.Foo();
+                    /* DECOMMENT FOLLOWING CODE FOR MIM
+					 * ================================
+					 * int b = mim_object.Foo();
+					 */
+					int b = mim_object.StaticFoo();
                 }
                 // Get execution time of the application
                 Log.d("EXECUTION_TIME", Long.toString(System.currentTimeMillis() - beg));
